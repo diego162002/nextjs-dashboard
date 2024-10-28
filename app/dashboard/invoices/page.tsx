@@ -19,7 +19,7 @@ export default function Page() {
         const decodedData = atob(data.content); // Decode base64 data from GitHub
         const jsonData = JSON.parse(decodedData);
 
-        // Crear un nuevo dato con el valor obtenido
+        // Crear un nuevo dato
         const newSensorData = { id: sensorData.length + 1, name: 'Sensor MQ', value: jsonData["Data MQ"] };
         
         // Actualizar el estado con el nuevo dato
@@ -35,22 +35,15 @@ export default function Page() {
     };
 
     fetchData(); // Fetch initial data
-  }, [sensorData]); // Agregamos sensorData como dependencia para mantener actualizado el historial
+  }, []);
 
   return (
     <div
-      style={{
-        backgroundImage: `url('https://www.vistronica.com/20905-large_default/modulo-sensor-de-deteccion-de-gas-mq-2.jpg')`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat',
-        minHeight: '100vh', // Ajustar el tamaño mínimo para cubrir toda la vista
-      }}
-      className="p-4 bg-opacity-80"
+      className="min-h-screen bg-center bg-cover"
+      style={{ backgroundImage: "url('https://www.sigmaelectronica.net/wp-content/uploads/2014/05/MQ-2.jpg')" }}
     >
       <h1 className="text-center text-2xl font-bold mb-4 text-white">Datos del Sensor</h1>
-
-      <div className="overflow-x-auto bg-white bg-opacity-75 p-4 rounded-md">
+      <div className="overflow-x-auto bg-white bg-opacity-80 rounded-lg p-4 mx-auto max-w-3xl">
         <table className="min-w-full bg-white border border-blue-300">
           <thead>
             <tr className="bg-blue-200 text-blue-600 uppercase text-sm leading-normal">
