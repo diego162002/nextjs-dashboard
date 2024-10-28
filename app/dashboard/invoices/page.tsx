@@ -38,19 +38,19 @@ export default function Page() {
   }, [sensorData]); // Agregamos sensorData como dependencia para mantener actualizado el historial
 
   return (
-    <div>
-      <h1 className="text-center text-2xl font-bold mb-4">Datos del Sensor</h1>
+    <div
+      style={{
+        backgroundImage: `url('https://www.vistronica.com/20905-large_default/modulo-sensor-de-deteccion-de-gas-mq-2.jpg')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+        minHeight: '100vh', // Ajustar el tamaño mínimo para cubrir toda la vista
+      }}
+      className="p-4 bg-opacity-80"
+    >
+      <h1 className="text-center text-2xl font-bold mb-4 text-white">Datos del Sensor</h1>
 
-      {/* Imagen del sensor MQ */}
-      <div className="flex justify-center mb-4">
-        <img
-          src="https://www.vistronica.com/20905-large_default/modulo-sensor-de-deteccion-de-gas-mq-2.jpg" // Reemplaza con la ruta de tu imagen
-          alt="Sensor MQ"
-          className="w-24 h-24"
-        />
-      </div>
-
-      <div className="overflow-x-auto">
+      <div className="overflow-x-auto bg-white bg-opacity-75 p-4 rounded-md">
         <table className="min-w-full bg-white border border-blue-300">
           <thead>
             <tr className="bg-blue-200 text-blue-600 uppercase text-sm leading-normal">
