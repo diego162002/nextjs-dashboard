@@ -38,14 +38,7 @@ export default function Page() {
   }, []);
 
   return (
-    {/* Imagen del sensor MQ */}
-     
-        <img
-          src="https://naylampmechatronics.com/img/cms/Blog/Tutorial%20MQ/sensor%20MQ.jpg" 
-          alt="Sensor MQ"
-          className="w-24 h-24"
-        />
-    <div
+   
       style={{
         backgroundImage: "url('https://www.vistronica.com/20905-large_default/modulo-sensor-de-deteccion-de-gas-mq-2.jpg')",
         backgroundSize: 'cover',
