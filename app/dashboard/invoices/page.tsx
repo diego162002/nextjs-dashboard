@@ -19,7 +19,7 @@ export default function Page() {
         const decodedData = atob(data.content); // Decode base64 data from GitHub
         const jsonData = JSON.parse(decodedData);
 
-        // Crear un nuevo dato
+        // Crear un nuevo dato con el valor obtenido
         const newSensorData = { id: sensorData.length + 1, name: 'Sensor MQ', value: jsonData["Data MQ"] };
         
         // Actualizar el estado con el nuevo dato
@@ -35,7 +35,7 @@ export default function Page() {
     };
 
     fetchData(); // Fetch initial data
-  }, []);
+  }, [sensorData]); // Agregamos sensorData como dependencia para mantener actualizado el historial
 
   return (
     <div>
@@ -44,7 +44,7 @@ export default function Page() {
       {/* Imagen del sensor MQ */}
       <div className="flex justify-center mb-4">
         <img
-          src="https://www.vistronica.com/20905-large_default/modulo-sensor-de-deteccion-de-gas-mq-2.jpg" // Reemplaza con la ruta de tu imagen
+          src="/path/to/sensor-mq-image.jpg" // Reemplaza con la ruta de tu imagen
           alt="Sensor MQ"
           className="w-24 h-24"
         />
