@@ -40,6 +40,16 @@ export default function Page() {
   return (
     <div>
       <h1 className="text-center text-2xl font-bold mb-4">Datos del Sensor</h1>
+
+      {/* Imagen del sensor MQ */}
+      <div className="flex justify-center mb-4">
+        <img
+          src="/path/to/sensor-mq-image.jpg" // Reemplaza con la ruta de tu imagen
+          alt="Sensor MQ"
+          className="w-24 h-24"
+        />
+      </div>
+
       <div className="overflow-x-auto">
         <table className="min-w-full bg-white border border-blue-300">
           <thead>
