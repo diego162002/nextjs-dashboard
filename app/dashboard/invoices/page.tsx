@@ -39,7 +39,7 @@ export default function Page() {
 
   return (
     {/* Imagen del sensor MQ */}
-      <div className="flex justify-center mb-4">
+     
         <img
           src="https://naylampmechatronics.com/img/cms/Blog/Tutorial%20MQ/sensor%20MQ.jpg" // Reemplaza con la ruta de tu imagen
           alt="Sensor MQ"
