@@ -40,7 +40,7 @@ export default function Page() {
   return (
     <div
       style={{
-        backgroundImage: "url('https://www.vistronica.com/20905-large_default/modulo-sensor-de-deteccion-de-gas-mq-2.jpg')",
+        backgroundImage: "url('https://triacs.cl/684-superlarge_default_2x/sensor-de-gas-mq2.jpg')",
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
