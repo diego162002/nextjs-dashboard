@@ -14,7 +14,7 @@ export default function Page() {
 
     const fetchData = async () => {
       try {
-        const response = await fetch(https://api.github.com/repos/diego162002/nextjs-dashboard/contents/app/dashboard/data.json?timestamp=${Date.now()});
+        const response = await fetch(`https://api.github.com/repos/diego162002/nextjs-dashboard/contents/app/dashboard/data.json?timestamp=${Date.now()}`);
         const data = await response.json();
         const decodedData = atob(data.content); // Decode base64 data from GitHub
         const jsonData = JSON.parse(decodedData);
