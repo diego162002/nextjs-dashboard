@@ -41,7 +41,7 @@ export default function Page() {
     {/* Imagen del sensor MQ */}
      
         <img
-          src="https://naylampmechatronics.com/img/cms/Blog/Tutorial%20MQ/sensor%20MQ.jpg" // Reemplaza con la ruta de tu imagen
+          src="https://naylampmechatronics.com/img/cms/Blog/Tutorial%20MQ/sensor%20MQ.jpg" 
           alt="Sensor MQ"
           className="w-24 h-24"
         />
