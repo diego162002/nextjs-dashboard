@@ -47,7 +47,7 @@ export default function Page() {
         minHeight: '100vh'
       }}
     >
-      <h1 className="text-center text-2xl font-bold mb-4 text-white">Datos del Sensor</h1>
+      <h1 className="text-center text-2xl font-bold mb-4 text-blue-600">Datos del Sensor</h1>
       <div className="overflow-x-auto bg-white bg-opacity-80 rounded-lg p-4 mx-auto max-w-3xl">
         <table className="min-w-full bg-white border border-blue-300">
           <thead>
