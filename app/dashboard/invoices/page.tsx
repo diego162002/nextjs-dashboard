@@ -38,9 +38,16 @@ export default function Page() {
   }, []);
 
   return (
+    {/* Imagen del sensor MQ */}
+      <div className="flex justify-center mb-4">
+        <img
+          src="https://naylampmechatronics.com/img/cms/Blog/Tutorial%20MQ/sensor%20MQ.jpg" // Reemplaza con la ruta de tu imagen
+          alt="Sensor MQ"
+          className="w-24 h-24"
+        />
     <div
       style={{
-        backgroundImage: "url('https://www.sigmaelectronica.net/wp-content/uploads/2014/05/MQ-2.jpg')",
+        backgroundImage: "url('https://www.vistronica.com/20905-large_default/modulo-sensor-de-deteccion-de-gas-mq-2.jpg')",
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
