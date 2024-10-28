@@ -38,7 +38,7 @@ export default function Page() {
   }, []);
 
   return (
-   
+    <div
       style={{
         backgroundImage: "url('https://www.vistronica.com/20905-large_default/modulo-sensor-de-deteccion-de-gas-mq-2.jpg')",
         backgroundSize: 'cover',
