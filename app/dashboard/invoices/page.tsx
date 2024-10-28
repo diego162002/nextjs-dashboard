@@ -39,8 +39,13 @@ export default function Page() {
 
   return (
     <div
-      className="min-h-screen bg-center bg-cover"
-      style={{ backgroundImage: "url('https://www.sigmaelectronica.net/wp-content/uploads/2014/05/MQ-2.jpg')" }}
+      style={{
+        backgroundImage: "url('https://www.sigmaelectronica.net/wp-content/uploads/2014/05/MQ-2.jpg')",
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+        minHeight: '100vh'
+      }}
     >
       <h1 className="text-center text-2xl font-bold mb-4 text-white">Datos del Sensor</h1>
       <div className="overflow-x-auto bg-white bg-opacity-80 rounded-lg p-4 mx-auto max-w-3xl">
